@@ -9,29 +9,96 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
-      <div class="top-bar">
-        <div class="top-bar-left">
-          <ul class="dropdown menu" data-dropdown-menu>
-            <li class="menu-text">Site Title</li>
-            <li>
-              <a href="#">One</a>
-              <ul class="menu vertical">
-              <li><a href="#">One</a></li>
-              <li><a href="#">Two</a></li>
-              <li><a href="#">Three</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Two</a></li>
-            <li><a href="#">Three</a></li>
-        </ul>
+        <div class="top-bar">
+          <div class="top-bar-left">
+            <ul class="menu">
+              <li class="menu-text">Site Title</li>
+            </ul>
+          </div>
         </div>
-        <div class="top-bar-right">
-          <ul class="menu">
-            <li><input type="search" placeholder="Search"></li>
-            <li><button type="button" class="button">Search</button></li>
-          </ul>
+        <div class="row">
+          <div class="large-12 columns">
+            <h1>Application Design and Development</h1>
+          </div>
         </div>
-      </div>
+        <div class="row">
+          <div class="large-12 columns">
+            <div class="panel">
+              <h3>Where all your application dreams come to life </h3>
+              <p>In this class, we are going to cover a lot of material and you will have the opportunity
+              to pull together a lot of your prior learning to develop robust and resilient web based
+              applications</p>
+              <div class="row">
+                <div class="large-4 medium-4 columns">
+                  <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a>
+                  <br />Everything you need to know about using the framework.</p>
+                </div>
+                <div class="large-4 medium-4 columns">
+                  <p><a href="http://www.sinatrarb.com/documentation.html">Sinatra Documentation</a>
+                  <br />Learn all about Sinatra
+                  '
+                  s most interesting features and more.</p>
+                </div>
+                <div class="large-4 medium-4 columns">
+                  <p><a href="http://ruby-doc.org">Ruby Documentation</a>
+                  <br />Answers to all those crazy little questions
+                  you had about Ruby but were afraid to ask</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3>Now for some form action:</h3>
+          <form action="http://localhost:4567/feedback" method="post">
+            <div class="row">
+              <div class="large-6 columns">
+                <div class="row collapse prefix-radius">
+                  <div class="small-3 columns">
+                    <span class="prefix">First Name</span>
+                  </div>
+                  <div class="small-9 columns">
+                    <input type="text" name="firstname">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-6 columns">
+                <div class="row collapse prefix-radius">
+                  <div class="small-3 columns">
+                    <span class="prefix">Last Name</span>
+                  </div>
+                  <div class="small-9 columns">
+                    <input type="text" name="lastname">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-12 columns">
+              <label>How much do you love this class?
+                <select name="class_love">
+                  <option value="A lot">A lot</option>
+                  <option value="A Whole Lot">A Whole Lot</option>
+                  <option value="A Really Whole Lot">A Really Whole Lot</option>
+                  <option value="More than I care to say">More than I care to say</option>
+                </select>
+              </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-12 columns">
+                <label>Random Feedback
+                  <textarea name="feedback"></textarea>
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-12 columns">
+                <input type="submit" class="button-round" value="Submit">
+              </div>
+            </div>
+          </form>
+        </div>
 
    
 
